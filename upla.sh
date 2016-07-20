@@ -7,5 +7,5 @@ while [ $a -lt $b ]
 do
    python upla.py
    a=`expr $a + 1`
-   sleep 10m
+   sleep 100m
 done
