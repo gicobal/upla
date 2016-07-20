@@ -1,5 +1,5 @@
 Bu dosyadaki tüm yazıları silip uplamak istediğiniz postların id lerini bulup yazın.
-Örnek:
+Örnek (aşağıdaki post id ler sallamasyondur):
 3121342312321
 32424231214123
 31231231412
