@@ -1,7 +1,7 @@
 # 'up' a post
-import requests
+import requests, time
 
-TOKEN = 'insert token'
+TOKEN = 'EAACEdEose0cBAOThXLZAVZBD98CaNdC8YOP9TImQP5YEWDTOwbPjgHB3vwwS5I4Elhj6ft9TRttAZCsWZCeUmSJsfFHtEn7MDZAXuoSr2x6SLIWSNbOTtZADRJpjXLhOz8LAlYnF4CnXjxwEgXZBs8N3B7ioM5LUPmXrFklmqVupwZDZD'
 
 def getPosts():
     file = open('upposts.txt', 'r')
@@ -24,4 +24,7 @@ def uping(upposts):
         print "Wall post %s done" % uppost
 
 if __name__ == '__main__':
-    uping(getPosts())
+    runNum = 3
+    for i in range(runNum):
+        uping(getPosts())
+        time.sleep(60*100)
